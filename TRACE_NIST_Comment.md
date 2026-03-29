@@ -1,14 +1,14 @@
 # Public Comment: NCCoE Concept Paper
 ## Accelerating the Adoption of Software and AI Agent Identity and Authorization
 ### Submitted to: AI-Identity@nist.gov
-### Submitted by: Rui Soares — rui.soares@crossjoin.pt
+### Submitted by: Rui Soares — rui.msoares@gmail.com
 ### Date: March 2026
 
 ---
 
 ## Submitter Background
 
-Rui Soares is an Information Security and IT Governance professional with over 30 years of experience. He serves as ISMS Manager at Crossjoin Solutions (Almada, Portugal) and as an Invited Lecturer at NOVA IMS in Lisbon, where he teaches IT Governance, ITIL 4, and cybersecurity. He holds the CISSP certification and is an active contributor to the Cloud Security Alliance, including AI Controls Matrix review processes. He is the author of the TRACE proposal referenced in this submission and the developer of the WBSC (Worldview Belief System Card) framework for AI transparency, published through CSA.
+Rui Soares is an Information Security and IT Governance professional with over 30 years of experience. He serves as ISMS Manager at Crossjoin Solutions (Almada, Portugal) and as an Invited Lecturer at NOVA IMS in Lisbon, where he teaches IT Governance and IT Service Management. He holds the CISSP certification and is an active contributor to the Cloud Security Alliance, including AI Controls Matrix review processes. He is the author of the TRACE proposal referenced in this submission and the developer of the WBSC (Worldview Belief System Card) framework for AI transparency, published through CSA.
 
 ---
 
@@ -90,4 +90,4 @@ The submitter welcomes direct engagement and is available to present the TRACE p
 *ISMS Manager, Crossjoin Solutions*
 *Invited Lecturer, NOVA IMS, Lisbon*
 *CISSP | ISO 27001 | NIS2 Practitioner*
-*rui.soares@crossjoin.pt*
+*rui.msoares@gmail.com*
