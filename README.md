@@ -65,7 +65,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 **Rui Soares**
 ISMS Manager, Crossjoin Solutions | Invited Lecturer, NOVA IMS, Lisbon | CISSP
-rui.soares@crossjoin.pt
+rui.msoares@gmail.com
 
 ---
 
