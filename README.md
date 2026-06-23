@@ -62,7 +62,7 @@ TRACE is **complementary** — it augments existing standards rather than replac
 
 TRACE is designed to work seamlessly with leading tools and regulations. See the full details in:
 
-→ **[TRACE_Position_Paper_v0.3.md](TRACE_Position_Paper_v0.3.md)**
+→ **[TRACE_Position_Paper_v0.3.pdf](https://github.com/rumagoso/TRACE/blob/main/TRACE_Position_Paper_v0.3.pdf)**
 
 **Key Integrations**:
 
