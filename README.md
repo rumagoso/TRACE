@@ -111,7 +111,7 @@ We invite collaboration from:
 
 **How to contribute**:
 1. ⭐ Star the repo
-2. Review and comment on the [Position Paper](TRACE_Position_Paper_v0.3.md)
+2. Review and comment on the [Position Paper](https://github.com/rumagoso/TRACE/blob/main/TRACE_Position_Paper_v0.3.pdf)
 3. Join the working group (open expression of interest)
 4. Propose or build PoCs with C2PA, OTel, or national ID integrations
 
