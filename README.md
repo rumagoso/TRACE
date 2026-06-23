@@ -2,6 +2,8 @@
 
 **A proposed open infrastructure standard for verifiable AI agent identity, authorization, and accountability across organizational and jurisdictional boundaries.**
 
+TRACE is not an agent framework, an IAM system, or a national digital identity program; it is a trust interoperability layer connecting them.
+
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 **Version 0.3** — June 2026 (Expanded Integrations)  
