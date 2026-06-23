@@ -1,76 +1,128 @@
 # TRACE — Trusted Registry for Autonomous and Connected Entities
 
-**A proposed open infrastructure standard for AI agent identity and accountability.**
+**A proposed open infrastructure standard for verifiable AI agent identity, authorization, and accountability across organizational and jurisdictional boundaries.**
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+**Version 0.3** — June 2026 (Expanded Integrations)  
+**Author**: Rui Soares  
+ISMS Manager, Crossjoin Solutions | Invited Lecturer, NOVA IMS, Lisbon | CISSP
+
+---
+
+## 📋 Table of Contents
+
+- [Executive Summary](#executive-summary)
+- [The Problem](#the-problem)
+- [What is TRACE?](#what-is-trace)
+- [Integrations and Interoperability](#integrations-and-interoperability)
+- [Standards Alignment](#standards-alignment)
+- [Status & Roadmap](#status--roadmap)
+- [Call to Action](#call-to-action)
+- [License](#license)
+
+---
+
+## Executive Summary
+
+AI agents are increasingly acting autonomously across borders — booking meetings, executing transactions, controlling systems, and spawning sub-agents. Without shared infrastructure for identity and accountability, this creates serious risks.
+
+**TRACE** (Trusted Registry for Autonomous and Connected Entities) provides a practical, layered, open standard to answer the fundamental questions:
+
+> **Who are you? Who sent you? What are you authorised to do?**
+
+**v0.3** significantly strengthens the proposal with explicit mappings to **C2PA**, **OpenTelemetry**, **Estonia’s AI ID initiative**, and **China’s CAC rules**, positioning TRACE as the unifying identity backbone for agentic AI.
 
 ---
 
 ## The Problem
 
-AI agents book meetings, execute financial transactions, control industrial systems, and spawn sub-agents — across organisational and jurisdictional boundaries — with no shared infrastructure to answer a basic question:
+Enterprise IAM tools (OAuth 2.0, SPIFFE, OpenID Connect) work well *inside* organizational boundaries but were never designed for agents operating across them. This gap enables spoofing, unaccountable delegation chains, and difficulty in incident response.
 
-> *Who are you, who sent you, and what are you authorised to do?*
-
-Enterprise IAM standards (OAuth 2.0, SPIFFE/SPIRE, OpenID Connect) address agents operating inside a single organisation's trust perimeter. They were not designed for agents crossing that perimeter. No current standard was.
-
-This is not a future risk. It is a present condition.
+This is no longer theoretical — it is an active challenge in 2026.
 
 ---
 
-## What TRACE Is
+## What is TRACE?
 
-TRACE is a proposed four-layer open standard to close this gap.
+TRACE is a **four-layer open infrastructure**:
 
-| Layer | Name | Function |
-|---|---|---|
-| 1 | Identity | Cryptographic identity bound to a verified legal entity, recorded on a permissioned ledger using W3C DIDs. Recursive Sub-Tokens enable high-velocity delegation without losing chain of custody. |
-| 2 | Access | Resources query TRACE before granting access. Registered and in good standing: access at the appropriate trust tier. Unregistered: no access, without exception. |
-| 3 | Governance | The TRACE Foundation — a multi-stakeholder non-profit modelled on ICANN — governs the registry at two speeds: automated Circuit Breakers for real-time containment, human supermajority for permanent revocation. |
-| 4 | Economic Alignment | High-risk agents post conditional collateral held in escrow. On verified failure, collateral is released to a victim recourse pool. Clean records earn tiered infrastructure incentives. |
+| Layer              | Purpose                                                                 | Key Mechanisms |
+|--------------------|-------------------------------------------------------------------------|----------------|
+| **1. Identity**    | Persistent, verifiable agent identity tied to legal entities            | W3C DIDs on permissioned ledger + Recursive Sub-Tokens |
+| **2. Access**      | Real-time authorization at resource boundaries                          | Registry queries + Scoped permissions |
+| **3. Governance**  | Oversight, rapid response, and long-term stewardship                    | ICANN-style Foundation + Automated Circuit Breakers |
+| **4. Economic Alignment** | Skin-in-the-game and positive incentives                              | Conditional collateral/escrow + reputation tiers |
 
-TRACE complements, not competes with, existing frameworks. It provides the identity substrate the EU AI Act assumes but does not specify; the accountability chain ISO 42001 requires but does not provision; the revocation mechanism NIS2 implies but does not mandate for AI.
-
----
-
-## Status
-
-| Milestone | Status |
-|---|---|
-| Position Paper v0.2 | Published — March 2026 |
-| NIST NCCoE Public Comment | Submitted — March 2026 |
-| CSA Blog Submission | Pending |
-| Working Group Formation | Open for interest |
+TRACE is **complementary** — it augments existing standards rather than replacing them.
 
 ---
 
-## Documents
+## Integrations and Interoperability
 
-- **Position Paper v0.2** — [LinkedIn](https://www.linkedin.com/pulse/registry-ai-agents-problem-rui-soares-bcyye/) — full architecture, threat model, standards alignment, and call to action
-- **NIST NCCoE Public Comment** — submitted to AI-Identity@nist.gov ahead of the April 2, 2026 deadline — available in this repository
+TRACE is designed to work seamlessly with leading tools and regulations. See the full details in:
+
+→ **[TRACE_Position_Paper_v0.3.md](TRACE_Position_Paper_v0.3.md)**
+
+**Key Integrations**:
+
+- **C2PA / Content Credentials**: TRACE DIDs serve as authoritative signers for manifests, adding persistent identity and revocation.
+- **OpenTelemetry**: Enrich agent traces with TRACE identity for end-to-end observability and governance.
+- **Estonia AI IDs** (June 2026): Direct mapping for national-to-global scaling.
+- **China CAC Rules**: Enables compliant labeling and cross-border enforcement.
+
+These mappings close critical gaps in provenance, observability, and regulatory compliance.
 
 ---
 
 ## Standards Alignment
 
-TRACE is designed for compatibility with: W3C DID Core 1.0, OAuth 2.0, NIST SP 800-63-4, NIST AI RMF, ISO/IEC 42001, EU AI Act (Articles 9, 13, 22), NIS2 Directive, EBSI (EU deployments), CSA AICM.
+TRACE aligns with and supports:
+- W3C DID Core, OAuth 2.0
+- NIST AI RMF & SP 800-63
+- ISO/IEC 42001, EU AI Act, NIS2
+- **C2PA**, **OpenTelemetry GenAI**
+- Estonia AI ID initiative, China CAC labeling rules
+- EBSI and other digital identity frameworks
 
 ---
 
-## Contributing
+## Status & Roadmap
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+| Milestone                        | Status                  | Date          |
+|----------------------------------|-------------------------|---------------|
+| Position Paper v0.3 (Integrations) | Draft                  | June 2026    |
+| Position Paper v0.2              | Published              | March 2026   |
+| NIST NCCoE Submission            | Submitted              | March 2026   |
+| CSA Blog Submission              | Pending                | —            |
+| Working Group Formation          | Open                   | Now          |
+| Reference Implementation / PoCs  | Planned                | Q3–Q4 2026   |
 
 ---
 
-## Author
+## Call to Action
 
-**Rui Soares**
-ISMS Manager, Crossjoin Solutions | Invited Lecturer, NOVA IMS, Lisbon | CISSP
-rui.msoares@gmail.com
+We invite collaboration from:
+
+- Standards bodies (C2PA, OpenTelemetry, ISO, NIST)
+- Governments & regulators (Estonia, EU, China, etc.)
+- AI framework developers (LangGraph, AutoGen, CrewAI, etc.)
+- Security & identity experts
+
+**How to contribute**:
+1. ⭐ Star the repo
+2. Review and comment on the [Position Paper](TRACE_Position_Paper_v0.3.md)
+3. Join the working group (open expression of interest)
+4. Propose or build PoCs with C2PA, OTel, or national ID integrations
 
 ---
 
-## Licence
+## License
 
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-You are free to share and adapt this material for any purpose, including commercial, provided you give appropriate credit.
+---
+
+**Repository**: [https://github.com/rumagoso/TRACE](https://github.com/rumagoso/TRACE)
+
+*Last updated: June 2026*
